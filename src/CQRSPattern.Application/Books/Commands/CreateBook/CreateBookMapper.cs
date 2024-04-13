@@ -4,12 +4,12 @@ namespace CQRSPattern.Application.Books.Commands.CreateBook;
 
 public sealed class CreateBookMapper : ICreateBookMapper
 {
-    public Book CreateToDomain(Book book) =>
+    public Book CreateToDomain(CreateBookCommand createBookCommand) =>
         new()
         {
-            Title = book.Title,
-            Author = book.Author,
-            Gender = book.Gender,
-            PublicationDate = book.PublicationDate
+            Title = createBookCommand.Title,
+            Author = createBookCommand.Author,
+            Gender = createBookCommand.Gender,
+            PublicationDate = createBookCommand.PublicationDate
         };
 }

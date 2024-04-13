@@ -4,5 +4,5 @@ namespace CQRSPattern.Application.Books.Commands.CreateBook;
 
 public interface ICreateBookMapper
 {
-    Book CreateToDomain(Book book);
+    Book CreateToDomain(CreateBookCommand createBookCommand);
 }

@@ -26,4 +26,8 @@
 		<Using Include="Xunit" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\..\CQRSPattern.Application\CQRSPattern.Application.csproj" />
+	</ItemGroup>
+
 </Project>

@@ -15,6 +15,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\CQRSPattern.CrossCutting\CQRSPattern.CrossCutting.csproj" />
 		<ProjectReference Include="..\..\CQRSPattern.Domain\CQRSPattern.Domain.csproj" />
 	</ItemGroup>
 

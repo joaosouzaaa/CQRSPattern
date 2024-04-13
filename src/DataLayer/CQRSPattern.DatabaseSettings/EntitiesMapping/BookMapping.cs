@@ -1,4 +1,5 @@
-﻿using CQRSPattern.Domain.Entities;
+﻿using CQRSPattern.CrossCutting.Constants;
+using CQRSPattern.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,6 +9,8 @@ internal sealed class BookMapping : IEntityTypeConfiguration<Book>
 {
     public void Configure(EntityTypeBuilder<Book> builder)
     {
+        builder.ToTable(TableNamesConstants.Book);
+
         builder.HasKey(b => b.Id);
 
         builder.Property(b => b.Title)

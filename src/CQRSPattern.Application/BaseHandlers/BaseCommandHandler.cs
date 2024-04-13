@@ -12,15 +12,15 @@ public abstract class BaseCommandHandler<TDomain>
     private readonly INotificationHandler _notificationHandler;
 
     protected BaseCommandHandler(
-        IUnitOfWork unitOfWork, 
-        IValidator<TDomain> validator, 
+        IUnitOfWork unitOfWork,
+        IValidator<TDomain> validator,
         INotificationHandler notificationHandler)
     {
         _unitOfWork = unitOfWork;
         _validator = validator;
         _notificationHandler = notificationHandler;
     }
-    
+
     protected async Task<bool> ValidateAsync(TDomain domain)
     {
         var validationResult = await _validator.ValidateAsync(domain);
@@ -30,7 +30,7 @@ public abstract class BaseCommandHandler<TDomain>
             return true;
         }
 
-        foreach(ValidationFailure error in validationResult.Errors)
+        foreach (ValidationFailure error in validationResult.Errors)
         {
             _notificationHandler.AddNotification(error.PropertyName, error.ErrorMessage);
         }

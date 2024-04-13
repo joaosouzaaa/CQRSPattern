@@ -8,8 +8,5 @@ public enum EMessage : ushort
     InvalidLength,
 
     [Description("{0} was not found.")]
-    NotFound,
-
-    [Description("{0} has invalid format.")]
-    InvalidFormat
+    NotFound
 }

@@ -1,4 +1,4 @@
-﻿using CQRSPattern.CrossCutting.Interfaces.DataStore.Repositories;
+﻿using CQRSPattern.CrossCutting.Interfaces.DataLayer.Repositories;
 using CQRSPattern.DatabaseSettings.DatabaseContexts;
 using CQRSPattern.Domain.Entities;
 using Microsoft.EntityFrameworkCore;

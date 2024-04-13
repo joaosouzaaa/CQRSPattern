@@ -1,6 +1,6 @@
 ﻿using CQRSPattern.Domain.Entities;
 
-namespace CQRSPattern.CrossCutting.Interfaces.DataStore.Repositories;
+namespace CQRSPattern.CrossCutting.Interfaces.DataLayer.Repositories;
 
 public interface IBookRepository
 {

@@ -1,4 +1,4 @@
-﻿using CQRSPattern.CrossCutting.Interfaces.DataStore;
+﻿using CQRSPattern.CrossCutting.Interfaces.DataLayer;
 using CQRSPattern.DatabaseSettings.DatabaseContexts;
 
 namespace CQRSPattern.DataStore;

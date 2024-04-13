@@ -1,4 +1,4 @@
-﻿namespace CQRSPattern.CrossCutting.Interfaces.DataStore;
+﻿namespace CQRSPattern.CrossCutting.Interfaces.DataLayer;
 
 public interface IUnitOfWork
 {

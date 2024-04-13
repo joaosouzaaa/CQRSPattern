@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2D894DE7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "src\Tests\UnitTests\UnitTests.csproj", "{4C712725-A214-4C76-A7DE-9998CAA67BB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPattern.Application", "CQRSPattern.Application\CQRSPattern.Application.csproj", "{E3DED287-4A5F-4873-A5F4-E18EC9912B89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{4C712725-A214-4C76-A7DE-9998CAA67BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C712725-A214-4C76-A7DE-9998CAA67BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C712725-A214-4C76-A7DE-9998CAA67BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DED287-4A5F-4873-A5F4-E18EC9912B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DED287-4A5F-4873-A5F4-E18EC9912B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DED287-4A5F-4873-A5F4-E18EC9912B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DED287-4A5F-4873-A5F4-E18EC9912B89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

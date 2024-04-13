@@ -12,7 +12,10 @@
 
 	<ItemGroup>
 		<Folder Include="Controllers\" />
-		<Folder Include="DependencyInjection\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DataLayer\CQRSPattern.DatabaseSettings\CQRSPattern.DatabaseSettings.csproj" />
 	</ItemGroup>
 
 </Project>

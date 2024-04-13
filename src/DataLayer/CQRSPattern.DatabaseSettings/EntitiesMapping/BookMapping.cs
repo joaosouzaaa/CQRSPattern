@@ -13,6 +13,9 @@ internal sealed class BookMapping : IEntityTypeConfiguration<Book>
 
         builder.HasKey(b => b.Id);
 
+        builder.Property(b => b.Id)
+               .HasColumnName("id");
+
         builder.Property(b => b.Title)
                .IsRequired(true)
                .HasColumnName("title")

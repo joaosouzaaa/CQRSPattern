@@ -6,4 +6,14 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Dapper" Version="2.1.44" />
+	  <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+	  <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\CQRSPattern.CrossCutting\CQRSPattern.CrossCutting.csproj" />
+	</ItemGroup>
+
 </Project>

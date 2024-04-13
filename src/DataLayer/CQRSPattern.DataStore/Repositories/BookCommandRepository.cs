@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CQRSPattern.DataStore.Repositories;
 
-public sealed class BookRepository(AppDbContext dbContext) : IBookRepository, IDisposable
+public sealed class BookCommandRepository(AppDbContext dbContext) : IBookCommandRepository, IDisposable
 {
     private DbSet<Book> DbContextSet => dbContext.Set<Book>();
 

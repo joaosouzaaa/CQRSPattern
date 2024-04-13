@@ -2,7 +2,7 @@
 
 namespace CQRSPattern.CrossCutting.Interfaces.DataLayer.Repositories;
 
-public interface IBookRepository
+public interface IBookCommandRepository
 {
     void Add(Book book);
     void Update(Book book);

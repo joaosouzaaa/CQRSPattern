@@ -1,10 +1,11 @@
 ﻿using CQRSPattern.Domain.Entities;
 
-namespace CQRSPattern.CrossCutting.Interfaces.Repositories;
+namespace CQRSPattern.CrossCutting.Interfaces.DataStore.Repositories;
+
 public interface IBookRepository
 {
     void Add(Book book);
     void Update(Book book);
-    Task<bool> ExistsAsync(int id);    
+    Task<bool> ExistsAsync(int id);
     Task DeleteAsync(int id);
 }

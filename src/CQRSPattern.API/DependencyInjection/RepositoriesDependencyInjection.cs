@@ -1,4 +1,4 @@
-﻿using CQRSPattern.CrossCutting.Interfaces.Repositories;
+﻿using CQRSPattern.CrossCutting.Interfaces.DataStore.Repositories;
 using CQRSPattern.DataStore.Repositories;
 
 namespace CQRSPattern.API.DependencyInjection;

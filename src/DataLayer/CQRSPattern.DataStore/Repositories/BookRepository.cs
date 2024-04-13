@@ -1,10 +1,11 @@
-﻿using CQRSPattern.CrossCutting.Interfaces.Repositories;
+﻿using CQRSPattern.CrossCutting.Interfaces.DataStore.Repositories;
 using CQRSPattern.DatabaseSettings.DatabaseContexts;
 using CQRSPattern.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CQRSPattern.DataStore.Repositories;
-public sealed class BookRepository(AppDbContext dbContext) : IBookRepository
+
+public sealed class BookRepository(AppDbContext dbContext) : IBookRepository, IDisposable
 {
     private DbSet<Book> DbContextSet => dbContext.Set<Book>();
 
@@ -22,5 +23,12 @@ public sealed class BookRepository(AppDbContext dbContext) : IBookRepository
         var book = await DbContextSet.FindAsync(id);
 
         DbContextSet.Remove(book!);
+    }
+
+    public void Dispose()
+    {
+        dbContext.Dispose();
+        
+        GC.SuppressFinalize(this);
     }
 }

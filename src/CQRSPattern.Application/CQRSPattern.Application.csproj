@@ -11,6 +11,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="FluentValidation" Version="11.9.0" />
+	  <PackageReference Include="MediatR" Version="12.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CQRSPattern.CrossCutting\CQRSPattern.CrossCutting.csproj" />
 	  <ProjectReference Include="..\CQRSPattern.Domain\CQRSPattern.Domain.csproj" />
 	</ItemGroup>
 

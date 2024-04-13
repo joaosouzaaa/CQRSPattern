@@ -1,4 +1,5 @@
 using CQRSPattern.API.DependencyInjection;
+using CQRSPattern.CrossCutting.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
@@ -17,6 +18,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors(CorsNamesConstants.CorsPolicy);
 app.UseAuthorization();
 app.MapControllers();
 app.MigrateDatabase();

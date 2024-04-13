@@ -20,6 +20,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\CQRSPattern.CrossCutting\CQRSPattern.CrossCutting.csproj" />
+		<ProjectReference Include="..\DataLayer\CQRSPattern.DataAccessLayer\CQRSPattern.DataAccessLayer.csproj" />
 		<ProjectReference Include="..\DataLayer\CQRSPattern.DatabaseSettings\CQRSPattern.DatabaseSettings.csproj" />
 		<ProjectReference Include="..\DataLayer\CQRSPattern.DataStore\CQRSPattern.DataStore.csproj" />
 	</ItemGroup>

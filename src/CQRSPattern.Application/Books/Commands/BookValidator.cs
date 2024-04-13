@@ -4,6 +4,7 @@ using CQRSPattern.Domain.Enums;
 using FluentValidation;
 
 namespace CQRSPattern.Application.Books.Commands;
+
 public sealed class BookValidator : AbstractValidator<Book>
 {
     public BookValidator()

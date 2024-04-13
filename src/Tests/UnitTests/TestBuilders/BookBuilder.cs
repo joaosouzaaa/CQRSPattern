@@ -10,7 +10,7 @@ internal sealed class BookBuilder
     private string _title = "random";
     private string _author = "test";
     private readonly EGender _gender = EGender.Fiction;
-    private DateTime _publicationDate = DateTime.Now;
+    private readonly DateTime _publicationDate = DateTime.Now;
 
     public static BookBuilder NewObject() =>
         new();
@@ -30,4 +30,18 @@ internal sealed class BookBuilder
             _author,
             _gender,
             _publicationDate);
+
+    public BookBuilder WithTitle(string title)
+    {
+        _title = title;
+
+        return this;
+    }
+
+    public BookBuilder WithAuthor(string author)
+    {
+        _author = author;
+
+        return this;
+    }
 }

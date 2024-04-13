@@ -1,4 +1,4 @@
-﻿using CQRSPattern.CrossCutting.Interfaces.DataLayer.Repositories;
+﻿using CQRSPattern.CrossCutting.Interfaces.DataLayer.Repositories.Books;
 using CQRSPattern.CrossCutting.Options;
 using CQRSPattern.Domain.Entities;
 using Dapper;

@@ -31,4 +31,8 @@
 	  <ProjectReference Include="..\..\CQRSPattern.Application\CQRSPattern.Application.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="HandlerTests\" />
+	</ItemGroup>
+
 </Project>

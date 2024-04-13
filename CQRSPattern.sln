@@ -17,13 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSPattern.DataStore", "src\DataLayer\CQRSPattern.DataStore\CQRSPattern.DataStore.csproj", "{D7C7A317-65ED-4DBA-88A4-9A6DC6657027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPattern.DataAccessLayer", "src\DataLayer\CQRSPattern.DataAccessLayer\CQRSPattern.DataAccessLayer.csproj", "{904E53DF-C34C-42AC-AE70-43D053DF4A95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSPattern.DataAccessLayer", "src\DataLayer\CQRSPattern.DataAccessLayer\CQRSPattern.DataAccessLayer.csproj", "{904E53DF-C34C-42AC-AE70-43D053DF4A95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPattern.CrossCutting", "src\CQRSPattern.CrossCutting\CQRSPattern.CrossCutting.csproj", "{A8766F59-63F0-43AC-A7C9-EAC495FA0A61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSPattern.CrossCutting", "src\CQRSPattern.CrossCutting\CQRSPattern.CrossCutting.csproj", "{A8766F59-63F0-43AC-A7C9-EAC495FA0A61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPattern.DatabaseSettings", "src\DataLayer\CQRSPattern.DatabaseSettings\CQRSPattern.DatabaseSettings.csproj", "{8D1FD331-E01C-4BBF-8D34-428F1B10D303}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSPattern.DatabaseSettings", "src\DataLayer\CQRSPattern.DatabaseSettings\CQRSPattern.DatabaseSettings.csproj", "{8D1FD331-E01C-4BBF-8D34-428F1B10D303}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSPattern.Domain", "src\CQRSPattern.Domain\CQRSPattern.Domain.csproj", "{B1E056AA-4DE4-4A1F-A3F2-4DD47853E99F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSPattern.Domain", "src\CQRSPattern.Domain\CQRSPattern.Domain.csproj", "{B1E056AA-4DE4-4A1F-A3F2-4DD47853E99F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +77,7 @@ Global
 		{904E53DF-C34C-42AC-AE70-43D053DF4A95} = {45A24A8F-802C-4FFB-9BFB-4759D389BEEF}
 		{A8766F59-63F0-43AC-A7C9-EAC495FA0A61} = {D8197CC0-68C2-4FE0-930F-31E205394434}
 		{8D1FD331-E01C-4BBF-8D34-428F1B10D303} = {45A24A8F-802C-4FFB-9BFB-4759D389BEEF}
+		{B1E056AA-4DE4-4A1F-A3F2-4DD47853E99F} = {D8197CC0-68C2-4FE0-930F-31E205394434}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {789040E6-1BD9-42ED-A516-F4A6375CBDC3}

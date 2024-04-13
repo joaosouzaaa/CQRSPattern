@@ -12,8 +12,11 @@ public sealed class BookCommandRepository(AppDbContext dbContext) : IBookCommand
     public void Add(Book book) =>
         DbContextSet.Add(book);
 
+    public Task<Book?> GetByIdAsync(int id) =>
+        DbContextSet.FirstOrDefaultAsync(b => b.Id == id);
+
     public void Update(Book book) =>
-        dbContext.Entry(book).State = EntityState.Modified; 
+        dbContext.Entry(book).State = EntityState.Modified;
 
     public Task<bool> ExistsAsync(int id) =>
         DbContextSet.AsNoTracking().AnyAsync(b => b.Id == id);
@@ -28,7 +31,7 @@ public sealed class BookCommandRepository(AppDbContext dbContext) : IBookCommand
     public void Dispose()
     {
         dbContext.Dispose();
-        
+
         GC.SuppressFinalize(this);
     }
 }

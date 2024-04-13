@@ -10,5 +10,7 @@ internal static class DependencyInjectionHandler
         string connectionString = configuration["ConnectionStrings:DefaultConnection"]!;
 
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
+
+        services.AddRepositoriesDependencyInjection();
     }
 }

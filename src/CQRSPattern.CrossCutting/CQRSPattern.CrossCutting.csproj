@@ -11,4 +11,8 @@
 		<Folder Include="Settings\NotificationSettings\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\CQRSPattern.Domain\CQRSPattern.Domain.csproj" />
+	</ItemGroup>
+
 </Project>

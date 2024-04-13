@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
@@ -8,8 +8,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	</ItemGroup>
@@ -19,7 +19,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\DataLayer\CQRSPattern.DatabaseSettings\CQRSPattern.DatabaseSettings.csproj" />
+		<ProjectReference Include="..\CQRSPattern.CrossCutting\CQRSPattern.CrossCutting.csproj" />
+		<ProjectReference Include="..\DataLayer\CQRSPattern.DatabaseSettings\CQRSPattern.DatabaseSettings.csproj" />
+		<ProjectReference Include="..\DataLayer\CQRSPattern.DataStore\CQRSPattern.DataStore.csproj" />
 	</ItemGroup>
 
 </Project>

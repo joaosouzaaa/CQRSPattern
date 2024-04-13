@@ -9,6 +9,7 @@ using Moq;
 using UnitTests.TestBuilders;
 
 namespace UnitTests.HandlerTests.Books;
+
 public sealed class CreateBookCommandHandlerTests
 {
     private readonly Mock<IBookCommandRepository> _bookCommandRepositoryMock;

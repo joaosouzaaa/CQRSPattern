@@ -6,4 +6,12 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <Folder Include="Books\Queries\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CQRSPattern.Domain\CQRSPattern.Domain.csproj" />
+	</ItemGroup>
+
 </Project>

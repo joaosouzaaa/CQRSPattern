@@ -6,5 +6,6 @@ internal static class DependencyInjectionHandler
     {
         services.AddDataDependencyInjection();
         services.AddOptionsDependencyInjection(configuration);
+        services.AddMappersDependencyInjection();
     }
 }

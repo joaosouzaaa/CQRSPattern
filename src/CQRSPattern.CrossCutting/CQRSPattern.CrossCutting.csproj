@@ -6,4 +6,9 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<ItemGroup>
+		<Folder Include="Interfaces\Settings\" />
+		<Folder Include="Settings\NotificationSettings\" />
+	</ItemGroup>
+
 </Project>

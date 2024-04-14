@@ -15,6 +15,6 @@ public sealed class GetBookByIdQueryHandler(
         if (book is null)
             return null;
 
-        return getBookByIdMapper.DomainToResponse(book);
+        return getBookByIdMapper.DomainToByIdResponse(book);
     }
 }

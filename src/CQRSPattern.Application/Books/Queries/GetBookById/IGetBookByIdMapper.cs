@@ -4,5 +4,5 @@ namespace CQRSPattern.Application.Books.Queries.GetBookById;
 
 public interface IGetBookByIdMapper
 {
-    BookByIdResponse DomainToResponse(Book book);
+    BookByIdResponse DomainToByIdResponse(Book book);
 }

@@ -13,13 +13,13 @@ public sealed class GetBookByIdMapperTests
     }
 
     [Fact]
-    public void DomainToResponse_SuccessfulScenario_ReturnsResponseEntity()
+    public void DomainToByIdResponse_SuccessfulScenario_ReturnsResponseEntity()
     {
         // A
         var book = BookBuilder.NewObject().DomainBuild();
 
         // A
-        var bookByIdResponseResult = _getBookByIdMapper.DomainToResponse(book);
+        var bookByIdResponseResult = _getBookByIdMapper.DomainToByIdResponse(book);
 
         // A
         Assert.Equal(bookByIdResponseResult.Id, book.Id);

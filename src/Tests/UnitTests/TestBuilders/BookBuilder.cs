@@ -1,4 +1,5 @@
 ﻿using CQRSPattern.Application.Books.Commands.CreateBook;
+using CQRSPattern.Application.Books.Commands.DeleteBook;
 using CQRSPattern.Application.Books.Commands.UpdateBook;
 using CQRSPattern.Domain.Entities;
 using CQRSPattern.Domain.Enums;
@@ -38,6 +39,9 @@ internal sealed class BookBuilder
             _author,
             _gender,
             _publicationDate);
+
+    public DeleteBookCommand DeleteCommandBuild() =>
+        new(_id);
 
     public BookBuilder WithTitle(string title)
     {

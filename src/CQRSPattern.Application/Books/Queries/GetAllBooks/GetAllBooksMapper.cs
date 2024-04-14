@@ -2,10 +2,10 @@
 
 namespace CQRSPattern.Application.Books.Queries.GetAllBooks;
 
-public sealed class GetAllBooksMapper
+public sealed class GetAllBooksMapper : IGetAllBooksMapper
 {
-    public IEnumerable<BookGetAllResponse> DomainListToGetAllResponseList(List<Book> bookList) =>
-        bookList.Select(DomainToGetAllResponse);
+    public IEnumerable<BookGetAllResponse> DomainEnumerableToGetAllResponseEnumerable(IEnumerable<Book> bookEnumerable) =>
+        bookEnumerable.Select(DomainToGetAllResponse);
 
     private BookGetAllResponse DomainToGetAllResponse(Book book) =>
         new(book.Id,

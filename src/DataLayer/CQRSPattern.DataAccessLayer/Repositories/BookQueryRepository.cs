@@ -18,13 +18,14 @@ public sealed class BookQueryRepository(IOptions<ConnectionStringsOptions> conne
         await sqlConnection.OpenAsync();
 
         const string getByIdQuery = @"SELECT 
+            id,
             title,
             author,
             gender,
             publication_date AS 'PublicationDate'
 
             FROM Books 
-            WHERE 'id' = @Id";
+            WHERE id = @Id";
 
         var getByIdParameters = new
         {
@@ -41,6 +42,7 @@ public sealed class BookQueryRepository(IOptions<ConnectionStringsOptions> conne
         await sqlConnection.OpenAsync();
 
         const string getAllQuery = @"SELECT 
+            id,
             title,
             author,
             gender,

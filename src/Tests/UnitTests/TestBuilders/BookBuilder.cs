@@ -1,6 +1,7 @@
 ﻿using CQRSPattern.Application.Books.Commands.CreateBook;
 using CQRSPattern.Application.Books.Commands.DeleteBook;
 using CQRSPattern.Application.Books.Commands.UpdateBook;
+using CQRSPattern.Application.Books.Queries.GetAllBooks;
 using CQRSPattern.Application.Books.Queries.GetBookById;
 using CQRSPattern.Domain.Entities;
 using CQRSPattern.Domain.Enums;
@@ -48,6 +49,16 @@ internal sealed class BookBuilder
         new(_id);
 
     public BookByIdResponse ByIdResponseBuild() =>
+        new(_id,
+            _title,
+            _author,
+            _gender,
+            _publicationDate);
+
+    public GetAllBooksQuery AllQueryBuild() =>
+        new();
+
+    public BookGetAllResponse GetAllResponseBuild() =>
         new(_id,
             _title,
             _author,

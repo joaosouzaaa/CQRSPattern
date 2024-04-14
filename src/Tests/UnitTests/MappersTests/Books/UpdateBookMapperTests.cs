@@ -2,6 +2,7 @@
 using UnitTests.TestBuilders;
 
 namespace UnitTests.MappersTests.Books;
+
 public sealed class UpdateBookMapperTests
 {
     private readonly UpdateBookMapper _updateBookMapper;

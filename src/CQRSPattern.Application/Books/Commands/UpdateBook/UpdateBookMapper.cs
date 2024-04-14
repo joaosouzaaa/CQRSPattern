@@ -1,6 +1,7 @@
 ﻿using CQRSPattern.Domain.Entities;
 
 namespace CQRSPattern.Application.Books.Commands.UpdateBook;
+
 public sealed class UpdateBookMapper : IUpdateBookMapper
 {
     public void UpdateToDomain(UpdateBookCommand updateBookCommand, Book book)

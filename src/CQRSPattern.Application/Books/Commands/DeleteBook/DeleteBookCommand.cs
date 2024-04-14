@@ -1,3 +1,5 @@
-﻿namespace CQRSPattern.Application.Books.Commands.DeleteBook;
+﻿using MediatR;
 
-public sealed record DeleteBookCommand(int Id);
+namespace CQRSPattern.Application.Books.Commands.DeleteBook;
+
+public sealed record DeleteBookCommand(int Id) : IRequest;

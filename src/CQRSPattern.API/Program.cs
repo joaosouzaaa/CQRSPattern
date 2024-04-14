@@ -1,4 +1,5 @@
 using CQRSPattern.API.DependencyInjection;
+using CQRSPattern.API.Middlewares;
 using CQRSPattern.CrossCutting.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,10 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+else
+{
+    app.UseMiddleware<UnexpectedErrorMiddleware>();
 }
 
 app.UseHttpsRedirection();

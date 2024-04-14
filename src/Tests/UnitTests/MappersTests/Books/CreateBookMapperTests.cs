@@ -22,9 +22,9 @@ public sealed class CreateBookMapperTests
         var bookResult = _createBookMapper.CreateToDomain(createBookCommand);
 
         // A
-        Assert.Equal(createBookCommand.Title, bookResult.Title);
-        Assert.Equal(createBookCommand.Author, bookResult.Author);
-        Assert.Equal(createBookCommand.Gender, bookResult.Gender);
-        Assert.Equal(createBookCommand.PublicationDate, bookResult.PublicationDate);
+        Assert.Equal(bookResult.Title, createBookCommand.Title);
+        Assert.Equal(bookResult.Author, createBookCommand.Author);
+        Assert.Equal(bookResult.Gender, createBookCommand.Gender);
+        Assert.Equal(bookResult.PublicationDate, createBookCommand.PublicationDate);
     }
 }

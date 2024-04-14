@@ -1,4 +1,5 @@
 ﻿using CQRSPattern.Application.Books.Commands.CreateBook;
+using CQRSPattern.Application.Books.Commands.UpdateBook;
 using CQRSPattern.Domain.Entities;
 using CQRSPattern.Domain.Enums;
 
@@ -27,6 +28,13 @@ internal sealed class BookBuilder
 
     public CreateBookCommand CreateCommandBuild() =>
         new(_title,
+            _author,
+            _gender,
+            _publicationDate);
+
+    public UpdateBookCommand UpdateCommandBuild() =>
+        new(_id,
+            _title,
             _author,
             _gender,
             _publicationDate);

@@ -9,7 +9,7 @@ public abstract class BaseCommandHandler<TDomain>
 {
     protected readonly IUnitOfWork _unitOfWork;
     private readonly IValidator<TDomain> _validator;
-    private readonly INotificationHandler _notificationHandler;
+    protected readonly INotificationHandler _notificationHandler;
 
     protected BaseCommandHandler(
         IUnitOfWork unitOfWork,

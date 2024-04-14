@@ -1,8 +1,8 @@
 ﻿using CQRSPattern.Domain.Enums;
 
-namespace CQRSPattern.Application.Books.Queries.GetBookById;
+namespace CQRSPattern.Application.Books.Queries.GetAllBooks;
 
-public sealed record BookByIdResponse(
+public sealed record BookGetAllResponse(
     int Id,
     string Title,
     string Author,
